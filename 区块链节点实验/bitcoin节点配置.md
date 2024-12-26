@@ -38,6 +38,10 @@ dbcache=4
 maxorphantx=10
 # 减少网络连接数量
 maxconnections=10
+# listen=0
+# 默认情况下为1，Bitcoin Core 节点会开启监听功能，允许其他节点连接到它，接受传入的连接请求以提供区块和交易数据。
+blocksonly=1 # 块模式, 只是参与区块的同步, 不参与交易的传播
+
 ```
 ### 常规命令
 ```
