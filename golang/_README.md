@@ -42,3 +42,9 @@ Go 没有保证未相关的操作的执行顺序，除非通过上述机制明�
 同时启动定时器 Timeout, 等到时间结束.熔断器进入 half-open 状态. 此时允许进行 MaxRequests 次执行, 以进行试探. 假如执行成功, 熔断器进入 close 状态, 变量重置.
 否则, 进入open 状态, 同时再次开启定时器.
 ```
+
+ESR 和 ISR 是什么
+```
+ESR 是 equal sort range 原则,  一般数据库索引的建立,可以按这个员额来建立
+ISR 是 in sync replica, 代表 kafka 里面有效跟踪主节点的副本节点
+```
